@@ -1,0 +1,26 @@
+{
+  "namespace": "rhea_demo",
+  "fontId": "ui",
+  "html": "index.html",
+  "width": 360,
+  "height": 180,
+  "renderScale": 4,
+  "bodyFontSize": 15,
+  "bodyFontOversample": 4,
+  "bodyFont": "assets/AlegreyaSans-Regular.ttf",
+  "bodyFontLicense": "assets/OFL-AlegreyaSans.txt",
+  "packVersion": [97, 1],
+  "packDescription": "Rhea example dialog",
+  "pages": [
+    {"id": "main", "locale": "en", "chapter": "main", "labels": {
+      "heading": "Traveller's Journal",
+      "description": "The heading and frame are baked into the pack.",
+      "button": "Open guide"
+    }},
+    {"id": "guide", "html": "guide.html", "locale": "en", "chapter": "guide", "labels": {
+      "heading": "A Tiny Guide",
+      "description": "This page is also baked into the pack.",
+      "button": "Back to journal"
+    }}
+  ]
+}

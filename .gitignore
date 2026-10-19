@@ -1,0 +1,23 @@
+# Gradle and generated example output (also in nested projects)
+.gradle/
+build/
+out/
+
+# Node compiler dependencies and package output
+node_modules/
+coverage/
+dist/
+npm-debug.log*
+
+# Local IDE and OS files
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local credentials
+.env
+.env.*
+!.env.example
+gradle.properties

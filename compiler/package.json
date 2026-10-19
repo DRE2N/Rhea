@@ -1,0 +1,16 @@
+{
+  "name": "@erethon/rhea-compiler",
+  "version": "0.1.0",
+  "description": "Compile HTML and CSS into Minecraft dialog glyphs and templates",
+  "license": "MIT",
+  "type": "module",
+  "bin": { "rhea": "./rhea.mjs" },
+  "files": ["rhea.mjs", "compile.mjs", "verify.mjs"],
+  "engines": { "node": ">=20" },
+  "scripts": { "compile": "node rhea.mjs" },
+  "dependencies": {
+    "marked": "16.4.1",
+    "playwright": "1.56.1",
+    "pngjs": "7.0.0"
+  }
+}

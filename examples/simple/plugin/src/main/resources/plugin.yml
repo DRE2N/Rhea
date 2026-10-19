@@ -1,0 +1,8 @@
+name: RheaExample
+version: 1.0.0
+main: de.erethon.rhea.example.RheaExamplePlugin
+api-version: '1.21'
+commands:
+  rheademo:
+    description: Open the Rhea example dialog
+    usage: /rheademo

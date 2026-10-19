@@ -1,0 +1,19 @@
+* text=auto
+
+*.java text eol=lf
+*.kts text eol=lf
+*.mjs text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.md text eol=lf
+*.sh text eol=lf
+gradlew text eol=lf
+*.bat text eol=crlf
+
+*.jar binary
+*.png binary
+*.ttf binary
+*.webp binary
+*.zip binary

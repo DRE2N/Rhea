@@ -1,0 +1,29 @@
+@font-face { font-family: Alegreya; src: url('assets/AlegreyaSans-Regular.ttf'); }
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+#rhea-page {
+  position: relative;
+  width: 360px;
+  height: 180px;
+  padding: 18px 20px;
+  overflow: hidden;
+  color: #f4efe4;
+  background: linear-gradient(145deg, #253c3b, #121e24);
+  border: 2px solid #cfb17c;
+  font-family: Alegreya, sans-serif;
+}
+h1 { margin: 0; font-size: 24px; line-height: 30px; }
+p { margin: 7px 0; font-size: 15px; }
+.greeting { position: absolute; left: 20px; top: 82px; width: 320px; height: 18px; font-size: 15px; }
+.guide {
+  position: absolute;
+  left: 20px;
+  top: 124px;
+  width: 112px;
+  height: 32px;
+  padding: 5px 12px;
+  background: #365c5a;
+  border: 1px solid #d3bb8c;
+  font-size: 16px;
+  cursor: pointer;
+}
