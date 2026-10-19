@@ -1,23 +1,34 @@
 {
+  // Where the generated textures and fonts live in the resource pack.
   "namespace": "rhea_demo",
   "fontId": "ui",
   "html": "index.html",
+
+  // Canvas size in GUI pixels. The height must be a multiple of 9.
   "width": 360,
   "height": 180,
+  // Higher looks sharper, but makes the pack larger.
   "renderScale": 4,
+
+  // Local font for live text, with the license bundled alongside it.
   "bodyFontSize": 15,
   "bodyFontOversample": 4,
   "bodyFont": "assets/AlegreyaSans-Regular.ttf",
   "bodyFontLicense": "assets/OFL-AlegreyaSans.txt",
+
+  // Resource-pack format for the Minecraft version you're targeting.
   "packVersion": [97, 1],
   "packDescription": "Rhea example dialog",
+
+  // Each page becomes a template. selected matches data-rhea-selected in HTML.
+  // Labels replace matching data-label text at compile time.
   "pages": [
-    {"id": "main", "locale": "en", "chapter": "main", "labels": {
+    {"id": "main", "locale": "en", "selected": "main", "labels": {
       "heading": "Traveller's Journal",
       "description": "The heading and frame are baked into the pack.",
       "button": "Open guide"
     }},
-    {"id": "guide", "html": "guide.html", "locale": "en", "chapter": "guide", "labels": {
+    {"id": "guide", "html": "guide.html", "locale": "en", "selected": "guide", "labels": {
       "heading": "A Tiny Guide",
       "description": "This page is also baked into the pack.",
       "button": "Back to journal"

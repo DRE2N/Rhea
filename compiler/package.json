@@ -5,7 +5,7 @@
   "license": "MIT",
   "type": "module",
   "bin": { "rhea": "./rhea.mjs" },
-  "files": ["rhea.mjs", "compile.mjs", "verify.mjs"],
+  "files": ["rhea.mjs", "compile.mjs", "verify.mjs", "json-comments.mjs"],
   "engines": { "node": ">=20" },
   "scripts": { "compile": "node rhea.mjs" },
   "dependencies": {

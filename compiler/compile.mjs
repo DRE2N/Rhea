@@ -5,6 +5,7 @@ import {fileURLToPath, pathToFileURL} from 'node:url';
 import {chromium} from 'playwright';
 import {PNG} from 'pngjs';
 import {marked} from 'marked';
+import {parseCommentedJson} from './json-comments.mjs';
 
 // Inputs and limits
 const args = Object.fromEntries(process.argv.slice(2).reduce((pairs, item, i, list) => {
@@ -19,7 +20,7 @@ if (output === source || source.startsWith(output + path.sep) ||
     output === path.parse(output).root)
   throw new Error('Output must not replace the source, working directory, or a parent directory');
 
-const manifest = JSON.parse(fs.readFileSync(path.join(source, 'rhea.json'), 'utf8'));
+const manifest = parseCommentedJson(fs.readFileSync(path.join(source, 'rhea.json'), 'utf8'));
 const namespace = manifest.namespace || 'rhea';
 const fontId = manifest.fontId || 'ui';
 const width = manifest.width;
